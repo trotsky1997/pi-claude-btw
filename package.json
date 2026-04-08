@@ -1,0 +1,30 @@
+{
+  "name": "pi-claude-btw",
+  "version": "0.1.0",
+  "description": "Claude Code-style /btw side-question overlay for Pi.",
+  "type": "module",
+  "keywords": [
+    "pi-package"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trotsky1997/pi-claude-btw.git"
+  },
+  "homepage": "https://github.com/trotsky1997/pi-claude-btw",
+  "bugs": {
+    "url": "https://github.com/trotsky1997/pi-claude-btw/issues"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-agent-core": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/claude-btw"
+    ]
+  }
+}
