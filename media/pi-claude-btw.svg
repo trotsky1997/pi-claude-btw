@@ -1,0 +1,64 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="70" x2="1180" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F1DE"/>
+      <stop offset="0.55" stop-color="#E9E2C7"/>
+      <stop offset="1" stop-color="#D7CFB2"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1D2A2A"/>
+      <stop offset="1" stop-color="#273536"/>
+    </linearGradient>
+    <linearGradient id="card" x1="220" y1="170" x2="980" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F6EC"/>
+      <stop offset="1" stop-color="#EFE8D5"/>
+    </linearGradient>
+    <filter id="shadow" x="120" y="95" width="1040" height="470" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="20"/>
+      <feGaussianBlur stdDeviation="28"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.16 0 0 0 0 0.14 0 0 0 0 0.08 0 0 0 0.18 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <circle cx="1104" cy="126" r="140" fill="#E9A65C" fill-opacity="0.15"/>
+  <circle cx="176" cy="542" r="120" fill="#2C6A68" fill-opacity="0.12"/>
+  <path d="M0 470C188 406 319 395 487 452C655 509 832 522 1280 369V640H0V470Z" fill="#C9D5C4" fill-opacity="0.35"/>
+
+  <g filter="url(#shadow)">
+    <rect x="176" y="131" width="928" height="378" rx="30" fill="url(#panel)"/>
+    <rect x="205" y="160" width="870" height="320" rx="22" fill="url(#card)"/>
+  </g>
+
+  <rect x="239" y="194" width="802" height="40" rx="12" fill="#E4DCC8"/>
+  <circle cx="268" cy="214" r="7" fill="#DD7F52"/>
+  <circle cx="292" cy="214" r="7" fill="#D8B45A"/>
+  <circle cx="316" cy="214" r="7" fill="#6B9B78"/>
+  <text x="355" y="220" fill="#304244" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700">pi-claude-btw</text>
+  <text x="845" y="220" fill="#5D6A6B" font-family="'Courier New', monospace" font-size="18">/btw without breaking flow</text>
+
+  <rect x="257" y="261" width="420" height="170" rx="18" fill="#FCFAF3" stroke="#D8CFBA"/>
+  <text x="283" y="296" fill="#A56B2C" font-family="'Courier New', monospace" font-size="24" font-weight="700">/btw</text>
+  <text x="367" y="296" fill="#263436" font-family="'Courier New', monospace" font-size="24">what are you doing?</text>
+  <text x="283" y="337" fill="#697577" font-family="'Courier New', monospace" font-size="19">main conversation keeps streaming</text>
+  <text x="283" y="367" fill="#697577" font-family="'Courier New', monospace" font-size="19">parallel worker uses full branch context</text>
+  <text x="283" y="397" fill="#697577" font-family="'Courier New', monospace" font-size="19">overlay stays ephemeral until promoted</text>
+
+  <rect x="718" y="249" width="303" height="194" rx="22" fill="#223132"/>
+  <rect x="741" y="272" width="257" height="148" rx="16" fill="#162223" stroke="#415354"/>
+  <text x="763" y="301" fill="#E5A153" font-family="'Courier New', monospace" font-size="22" font-weight="700">/btw</text>
+  <text x="836" y="301" fill="#93A7A9" font-family="'Courier New', monospace" font-size="17">side question running</text>
+  <text x="763" y="335" fill="#D9E5E2" font-family="'Courier New', monospace" font-size="17">Question: what are you doing?</text>
+  <text x="763" y="370" fill="#EFC06D" font-family="'Courier New', monospace" font-size="17">| Answering...</text>
+  <text x="763" y="398" fill="#7E9697" font-family="'Courier New', monospace" font-size="14">Esc cancel  Up/Down scroll  S send to main</text>
+
+  <path d="M640 348C685 312 711 312 751 348" stroke="#C38A42" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M731 332L756 348L731 364" stroke="#C38A42" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="239" y="539" fill="#2B3E40" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700">Claude-style side questions for Pi</text>
+  <text x="242" y="579" fill="#566566" font-family="'Courier New', monospace" font-size="24">overlay UI · isolated worker · full-branch transcript · optional send-back</text>
+</svg>
